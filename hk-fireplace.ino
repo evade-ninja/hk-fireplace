@@ -35,7 +35,7 @@
 */
 
 #define RELAY_PIN 35
-#define SWITCH_PIN 5
+#define SWITCH_PIN 16
 
 #define BUTTON_SHORT_TIME 100
 #define BUTTON_LONG_HOLD_TIME 5000
@@ -55,7 +55,7 @@ void setup() {
     new Service::AccessoryInformation();            // HAP requires every Accessory to implement an AccessoryInformation Service  
       new Characteristic::Identify();               // HAP requires the Accessory Information Service to include the Identify Characteristic
         
-    new Fireplace(RELAY_PIN, SWITCH_PIN, BUTTON_LONG_HOLD_TIME, BUTTON_SHORT_TIME, 0);                              // instantiate the Fireplace Service (defined below) with relayPin set to 17
+    new Fireplace(RELAY_PIN, SWITCH_PIN, BUTTON_LONG_HOLD_TIME, BUTTON_SHORT_TIME, 0);                              // instantiate the Fireplace Service (defined below) with relayPin set to 16
   
 } // end of setup()
 
